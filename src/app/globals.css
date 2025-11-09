@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --brand: #f97316;
+  --brand-soft: #ffe8d0;
+  --ink: #0f172a;
+  --slate: #475467;
+  --muted: #98a2b3;
+  --sand: #e4dfd7;
+  --chalk: #f8f6f3;
+  --surface: #fdfaf5;
+  --white: #ffffff;
+}
+
+@theme inline {
+  --color-brand: var(--brand);
+  --color-ink: var(--ink);
+  --color-slate: var(--slate);
+  --color-muted: var(--muted);
+  --color-sand: var(--sand);
+  --color-chalk: var(--chalk);
+  --color-surface: var(--surface);
+  --color-white: var(--white);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --shadow-inner-sm: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
